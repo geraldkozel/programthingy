@@ -1,12 +1,29 @@
-*.class
+public class Student
+{
+    private String firstname;
+    private String lastname;
+    private String IDnumber;
+    private int classPeriod;
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+    public Student(String fname, String lname, String ID)
+    {
+        firstname = fname;
+        lastname = lname;
+        IDnumber = ID;
 
-# Package Files #
-*.jar
-*.war
-*.ear
+    }
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+    public String getFirst() {
+        return firstname;
+    }
+
+    public String getLast() {
+        return lastname;
+    }
+
+    public String getID() 
+    {
+        return IDnumber;
+    }
+
+}
